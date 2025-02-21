@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image:url("./img/Bookstore.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100svh;
+    
+}
+
+.navbar-toggler{
+    background-color: transparent;
+}
+
+.navbar{
+    background-color: #95B0A4;
+    height: 115px;
+    opacity: 100%;
+
+}
+
+
+.button.navbar-icon{
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            top: 3.4svh;
+            position:relative;
+
+}

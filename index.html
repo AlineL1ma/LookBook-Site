@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Livros, livrária, biblioteca, pesquisa livros, coleção, arquivos">
-    <meta name="description" content="Um site para busca de livros a partir da localização da pessoa">
-    <link rel="icon" href="./img/LookBook Logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>LookBook</title>
+  <meta charset="UTF-8">
+  <title>LookBook</title>
+  <!-- Garante que a página fique responsiva em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Vincula o arquivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand"></a>
-          <img class="logo" src="/img/LookBook Logo.png" alt="logo">
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </button>
-                <ul class="dropdown-menu dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo-text">LookBook</div>
+    <!-- Substitua 'logo-lookbook.png' pela sua imagem de ícone -->
+    <img src="logo-lookbook.png" alt="Ícone LookBook" class="logo-img">
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <div class="main-quote">"Um clique, mil histórias"</div>
+    <div class="subtext">
+      Sua história pode estar mais perto do que você imagina!<br>
+      Comece aqui os seus capítulos
+    </div>
+
+    <input 
+      type="text" 
+      class="search-bar" 
+      placeholder="Digite o nome do livro aqui..."
+    >
+
+    <div class="last-searches">
+      <h2>Suas últimas pesquisas</h2>
+      <div class="books-container">
+        <!-- Exemplo de três livros; substitua as capas conforme desejar -->
+        <div class="book">
+          <img src="capa1.jpg" alt="Capa do livro Coraline">
+          <p>Coraline</p>
         </div>
-    </nav>
-</div>
-
-<header>
-    <h1 class="titulo">
-        “Um clique, mil histórias”
-    </h1>
-
-    <h2 class="texto">
-        A sua história pode estar mais perto do<br>que você imagina! Comece aqui os seus<br>capítulos
-    </h2>
-</header>
-
-<main>
-    <div class="input-container">
-        <input 
-            type="text"
-            class="navegar"
-            placeholder="Digite o nome do livro aqui..." 
-        >
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-    </main>
-
-    <div class="linha">
-        <hr class="gradient-line">
-    </div>
-
-    <div class="container">
-        <button class="entrar">
-            Entrar na sua jornada
-        </button>
-        <div class="divider">
-            OU
+        <div class="book">
+          <img src="capa2.jpg" alt="Capa do livro Castelo Animado">
+          <p>Castelo Animado</p>
         </div>
-        <button class="cadastrar">
-            Cadastre-se e encontre o seu mundo
-        </button>
+        <div class="book">
+          <img src="capa3.jpg" alt="Capa do livro Harry Potter">
+          <p>Harry Potter</p>
+        </div>
+      </div>
     </div>
+  </main>
+
 </body>
-
 </html>

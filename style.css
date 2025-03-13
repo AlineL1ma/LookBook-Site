@@ -1,123 +1,203 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  /* Substitua 'bg-estante.jpg' pela imagem de fundo que desejar */
-  background: url('bg-estante.jpg') no-repeat center center;
-  background-size: cover;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+
+    
+
+body{
+    background-image:url("./img/Background.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100svh;
+    
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5); /* leve sobreposição para melhor contraste */
+/* 
+
+.navbar-toggler{
+    background-color: transparent;
 }
 
-/* Logo principal (texto) */
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: bold;
+.navbar{
+    background-color: #95B0A4;
+    height: 115px;
+    opacity: 80%;
+
 }
 
-/* Logo ou ícone à direita (substituir imagem) */
-.logo-img {
-  height: 40px;
-  width: auto;
+
+.button.navbar-icon{
+    background-color: white;
 }
 
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  /* Fundo semitransparente para destacar texto */
-  background-color: rgba(0, 0, 0, 0.3);
+.logo{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 74%;
+            top: 2.4svh;
+            position:relative;
 }
 
-/* Texto principal (citação) */
-.main-quote {
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 2rem 1rem 1rem;
+/* Main */
+
+.titulo{
+    color: white;
+    opacity: 95%;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 33px;
+    margin-top: 140px;
+    margin-left: 30px;
 }
 
-/* Subtexto */
-.subtext {
-  font-size: 1rem;
-  text-align: center;
-  margin: 0 1rem 2rem;
-  line-height: 1.5;
+.texto{
+    color: white;
+    opacity: 100%;
+    font-family: "Merriweather Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 25px;
 }
 
-/* Barra de pesquisa */
-.search-bar {
-  width: 80%;
-  max-width: 400px;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 2rem;
+.navegar {
+    margin-left: 12%;
+    margin-top: 25%;
+    width: 73%;
+    height: 20%;
+    max-width: 6100px;
+    padding: 15px 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 50px;
+
+    background: rgba(119, 136, 119, 0.8); /* Verde translúcido */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+
+    padding: 12px 20px 12px 45px; /* Espaço para o ícone */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
 }
 
-/* Seção das últimas pesquisas */
-.last-searches {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+.navegar::placeholder {
+    color: #e5e5e5; /* Placeholder mais claro */
+    font-style: italic;
 }
 
-.last-searches h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  text-align: center;
+.navegar:focus {
+    background: rgba(119, 136, 119, 1); /* Torna o fundo menos translúcido ao focar */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Container das capas (livros) */
-.books-container {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+.input-container {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
 }
 
-.book {
-  width: 120px;
-  text-align: center;
+.fa-magnifying-glass {
+    position: absolute;
+    top: 83.5%;
+    left: 100%; /* Espaço entre o ícone e o início do input */
+    transform: translateY(-50%);
+    color: #303030;
+    font-size: 16px;
 }
 
-.book img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  display: block;
+.linha {
+    border: none;
+    height: 0.5px;
+    width: 250px;
+    margin-left: 20%;
+    margin-top: 22%;
+    background: rgb(192, 192, 192); /* Gradiente de cor */
+    border-radius: 2px; /* Deixa as bordas arredondadas */
 }
 
-/* Pequeno ajuste para telas menores */
-@media (max-width: 480px) {
-  .main-quote {
-    font-size: 1.4rem;
-  }
-  .search-bar {
-    width: 90%;
-  }
-  .book {
-    width: 100px;
-  }
+
+.entrar {
+    background: rgba(119, 136, 119, 0.8); /* Verde translúcido */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 10;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+
+    margin-left: 12%;
+    margin-top: 18.5%;
+    width: 73%;
+    height: 20%;
+    max-width: 6100px;
+    padding: 15px 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 50px;
+    
+
 }
+
+.cadastrar {
+    background: rgba(119, 136, 119, 0.8); /* Verde translúcido */
+    color: #fff; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: normal; /* Define a fonte como regular */
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+
+    margin-left: 12%;
+    margin-top: -5%;
+    width: 73%;
+    height: 20%;
+    max-width: 6100px;
+    padding: 15px 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 50px;
+
+}
+
+.button:hover {
+    background-color: #506b52; /* Cor mais escura no hover */
+}
+
+.divider {
+    color: white;
+    margin: 19px;
+    font-size: 16px;
+    margin-left: 45%;
+}
+
